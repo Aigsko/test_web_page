@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>pogas</title>
+</head>
+
+<body>
+  <p>Pozitīvu skaitļu no 0 - 23 ievade</p>
+  
+  <h1 id = "skaitlis">0</h1>
+  
+  <button id = "plus" onclick = "pieskaitit()"> + </button>
+  <button id = "minus" onclick = "atnemt()"> - </button>
+  
+  <script>
+  
+    let sk = 0;
+
+    function pieskaitit() {
+      if (sk < 23) {
+        sk++;
+        document.getElementById("skaitlis").innerHTML = sk;
+      }
+    }
+
+    function atnemt() {
+      if (sk > 0) {
+        sk--;
+        document.getElementById("skaitlis").innerHTML = sk;
+      }
+    }
+    
+  </script>
+</body>
+
+</html>
